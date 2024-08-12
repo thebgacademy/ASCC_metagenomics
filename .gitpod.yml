@@ -1,8 +1,20 @@
 image: gitpod/workspace-full-vnc
 
+tasks:
 - name: SETUP
   init: |
     echo "Hello there - Welcome to GitPod"
+
+- name: SETUP - MAMBA ENVIRONMENT
+  init: |
+    cd /workspace
+    wget "https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-$(uname)-$(uname -m).sh"
+    bash Mambaforge-$(uname)-$(uname -m).sh -b -p /workspace/mambaforge && rm Mambaforge-$(uname)-$(uname -m).sh
+
+    /workspace/mambaforge/bin/mamba init bash
+    source ${HOME}/.bashrc
+    mamba create -n rapid -c bioconda perl-bioperl seqtk pyfastaq -y &&
+    gp sync-done bundle
 
 ports:
   - port: 5900
