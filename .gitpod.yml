@@ -1,10 +1,6 @@
 image: gitpod/workspace-full-vnc
 
 tasks:
-- name: SETUP
-  init: |
-    echo "Hello there - Welcome to GitPod"
-
 - name: SETUP - MAMBA ENVIRONMENT
   init: |
     cd /workspace
