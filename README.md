@@ -2,7 +2,7 @@
 
 This session is part of [**Biodiversity Genomics Academy 2024**](https://thebgacademy.org/)
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/thebgacademy/TEMPLATE)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/thebgacademy/ASCC_metagenomics)
 
 [YouTube Recording](https://www.youtube.com/@thebiodiversitygenomicsacademy) <-- To be updated after BGA24
 
